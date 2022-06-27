@@ -1,4 +1,4 @@
-# Enigma Machine
+# Enigma
 ## What Is This Project About?
 This Java project is a representation of a classical Enigma machine that consists of a right rotor, a left rotor and a reflector.
 
