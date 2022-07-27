@@ -33,9 +33,10 @@ public class Enigma {
 	 * <p>Constructs an {@code Enigma} instance with the specified {@code Rotor} and {@code Reflector} instances, and 
 	 * the specified initial position of the {@code Rotor}.</p>
 	 * 
-	 * <p>Parameter {@code initChar} is an array of 2 {@code char} representing the letters displayed in the window of 
-	 * the right and left {@code Rotor} respectively.  For example, array {B, E} indicates that the letter in the window 
-	 * of right and left rotor is B and E respectively.  {@code initChar} only accepts capital letters.
+	 * <p>Parameter {@code initChar} is an array of 2 {@code char} with the first and second entries representing the 
+	 * letters displayed in the window of the right and left {@code Rotor} respectively.  For example, array {B, E} 
+	 * indicates that the letter in the window of right and left rotor is B and E respectively.  {@code initChar} 
+	 * only accepts capital English letters.
 	 * 
 	 * <p>If you wish any of the letter displayed in the window of the {@code Rotor} unchanged, set the value of 
 	 * respective index of the {@code initChar} to A.</p>
@@ -141,7 +142,7 @@ public class Enigma {
 	 * Compares the specific object with this {@code Enigma} for equality.  Returns true if and only if the argument 
 	 * is not null and is a {@code Enigma} object and all the instance variables in the two {@code Enigmas} are equal.
 	 * 
-	 * @return true the specific object is equal to this {@code Enigma} and false otherwise
+	 * @return true if the specific object is equal to this {@code Enigma} and false otherwise
 	 */
 	public boolean equals(Object anObject) {
 		if (this == anObject) {
@@ -160,7 +161,7 @@ public class Enigma {
 	
 	/**
 	 * Returns a string representation of this {@code Enigma}.  The string representation consists of all the instance 
-	 * variables of the {@code Enigma}.  The instance variables are converted to string as by 
+	 * variables of the {@code Enigma}.  The instance variables are converted to string by 
 	 * {@link String#valueOf(Object)}.
 	 */
 	public String toString() {
